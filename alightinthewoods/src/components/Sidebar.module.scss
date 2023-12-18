@@ -1,113 +1,141 @@
 .container {
-  // position: absolute;
-  width: 4.6rem;
-  height: 100vh;
-  background-color: #222222;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 100vh;
-  padding: 12px 8px;
-  z-index: 100;
-  border-right: 1px solid #47474766;
+	position: absolute;
+	width: 4.6rem;
+	height: 100vh;
+	background-color: #222222;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-height: 100vh;
+	padding: 12px 8px;
+	z-index: 100;
+	border-right: 1px solid #47474766;
+	z-index: 50;
+	top: 0;
+	left: 0;
+	// position: fixed;
+}
+
+.containerMask {
+	width: 4.6rem;
+	height: 100vh;
 }
 
 .hamburgerMenu {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #47474766;
-  padding: 1rem 0 1.5rem 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #47474766;
+	padding: 1rem 0 1.5rem 0;
 }
 
 .hamburger__icon {
-  @apply transition-all duration-200 hover:border-[#fff];
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  border-color: beige;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: 1px solid #47474766;
+	@apply transition-all duration-200 hover:border-[#fff];
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	border-color: beige;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: 1px solid #47474766;
 
-  > div {
-    min-width: 1rem;
-    max-height: 1px;
-    height: 1px;
-    background: #fff;
-    margin: 1.5px 0 1.5px 0;
-  }
+	> div {
+		min-width: 1rem;
+		max-height: 1px;
+		height: 1px;
+		background: #fff;
+		margin: 1.5px 0 1.5px 0;
+	}
 }
 
 .sidebarNavigate {
-  @apply flex flex-col h-full;
-  padding: 1rem 0;
+	@apply flex flex-col h-full;
+	padding: 1rem 0;
 }
 
 .sidebarChapter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
 }
 .sidebarTitle {
-  color: white;
-  font-size: 10px;
-  margin-top: 4px;
+	color: white;
+	font-size: 10px;
+	margin-top: 4px;
 }
 .chapterIcon {
-  @apply transition-all duration-200 hover:border-[#fff];
-  cursor: pointer;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid #47474766;
-  > img {
-    width: 45%;
-    height: 45%;
-  }
+	@apply transition-all duration-200 hover:border-[#fff];
+	cursor: pointer;
+	width: 2rem;
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 1px solid #47474766;
+	> img {
+		width: 45%;
+		height: 45%;
+	}
 }
 
 .borderHorizonTop {
-  @apply bg-[#47474766] inline-block h-full max-w-[1px] w-[1px] mb-10 relative;
+	@apply bg-[#47474766] inline-block h-full max-w-[1px] w-[1px] mb-10 relative;
 }
 .borderHorizonTop::before {
-  @apply w-1 h-1 rounded-full bg-[#47474766] inline-block absolute top-0 z-10 left-[-1.5px];
-  content: "";
+	@apply w-1 h-1 rounded-full bg-[#47474766] inline-block absolute top-0 z-10 left-[-1.5px];
+	content: "";
 }
 
 .borderHorizonTop::after {
-  @apply w-1 h-1 rounded-full bg-[#47474766] inline-block absolute bottom-0 z-10 left-[-1.5px];
-  content: "";
+	@apply w-1 h-1 rounded-full bg-[#47474766] inline-block absolute bottom-0 z-10 left-[-1.5px];
+	content: "";
 }
 .borderHorizonBottom {
-  @apply bg-[#47474766] inline-block h-full max-w-[1px] w-[1px] mt-10 relative;
+	@apply bg-[#47474766] inline-block h-full max-w-[1px] w-[1px] mt-10 relative;
 }
 .borderHorizonBottom::before {
-  @apply w-1 h-1 rounded-full bg-[#47474766] inline-block absolute top-0 z-10 left-[-1.5px];
-  content: "";
+	@apply w-1 h-1 rounded-full bg-[#47474766] inline-block absolute top-0 z-10 left-[-1.5px];
+	content: "";
 }
 
 .borderHorizonBottom::after {
-  @apply w-1 h-1 rounded-full bg-[#47474766] inline-block absolute bottom-0 z-10 left-[-1.5px];
-  content: "";
+	@apply w-1 h-1 rounded-full bg-[#47474766] inline-block absolute bottom-0 z-10 left-[-1.5px];
+	content: "";
 }
 .sideBarMainTitle {
-  @apply text-sm text-white rotate-[270deg] flex items-center;
-  letter-spacing: 4px;
+	@apply text-sm text-white rotate-[270deg] flex items-center;
+	letter-spacing: 4px;
 }
 
 .sidebarSettings {
-  @apply flex items-center justify-center border-t w-full border-[#47474766] pt-3;
-  > img {
-    @apply p-1 rounded-full border border-[#47474766] cursor-pointer hover:border-[#fff] transition-all duration-200;
-  }
+	@apply flex items-center justify-center border-t w-full border-[#47474766] pt-3;
+	> img {
+		@apply p-1 rounded-full border border-[#47474766] cursor-pointer hover:border-[#fff] transition-all duration-200;
+	}
+}
+
+.sidebarBackdrop {
+	@apply absolute top-0 left-0 min-h-screen min-w-[100vw] z-40;
+	transition-property: backdrop-filter;
+	transition-duration: 500ms;
+	transition-timing-function: ease-in-out;
+}
+
+.hide {
+	// @apply invisible;
+	// backdrop-filter: blur(0px) brightness(1) saturate(100%) grayscale(0%)
+	// 	drop-shadow(0px 0px 0px #47474766);
+	backdrop-filter: revert;
+	pointer-events: none;
+}
+.show {
+	// @apply visible;
+	backdrop-filter: blur(8px) brightness(0.75) saturate(90%) grayscale(30%);
 }

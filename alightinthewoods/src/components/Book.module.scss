@@ -1,93 +1,93 @@
 .bookContainer {
-  @apply w-full h-full relative overflow-hidden flex flex-1;
-  transition: flex cubic-bezier(0.525, 0.06, 0.11, 0.995) 1200ms,
-    -webkit-box-flex cubic-bezier(0.525, 0.06, 0.11, 0.995) 1200ms,
-    -ms-flex cubic-bezier(0.525, 0.06, 0.11, 0.995) 1200ms;
+	@apply w-full h-full relative overflow-hidden flex flex-1;
+	transition: flex cubic-bezier(0.525, 0.06, 0.11, 0.995) 1200ms,
+		-webkit-box-flex cubic-bezier(0.525, 0.06, 0.11, 0.995) 1200ms,
+		-ms-flex cubic-bezier(0.525, 0.06, 0.11, 0.995) 1200ms;
 }
 
 .bookHoverMask {
-  @apply opacity-0 transition-opacity delay-500 ease-in-out duration-1000;
+	@apply opacity-0 transition-opacity delay-500 ease-in-out duration-1000;
 }
 
 .bookContainer:hover {
-  @apply flex-[20rem];
-  .borderHorizonTop {
-    @apply opacity-0;
-  }
-  .bookHoverMask {
-    @apply absolute top-0 left-0 px-4 py-8 flex flex-col items-center w-full h-full transition-opacity delay-500 ease-in-out duration-1000 opacity-100;
-    > div {
-      @apply relative w-full h-full;
+	@apply flex-[20rem];
+	.borderHorizonTop {
+		@apply opacity-0;
+	}
+	.bookHoverMask {
+		@apply absolute top-0 left-0 px-4 py-8 flex flex-col items-center w-full h-full transition-opacity delay-500 ease-in-out duration-1000 opacity-100;
+		> div {
+			@apply relative w-full h-full;
 
-      .bookConner1 {
-        @apply absolute top-0 left-0 w-16 opacity-40;
-      }
-      .bookConner2 {
-        @apply absolute top-0 right-0 w-16 opacity-40 rotate-90;
-      }
-      .bookConner3 {
-        @apply absolute bottom-0 left-0 w-16 opacity-40 rotate-[270deg];
-      }
-      .bookConner4 {
-        @apply absolute bottom-0 right-0 w-16 opacity-40 rotate-180;
-      }
+			.bookConner1 {
+				@apply absolute top-0 left-0 w-16 opacity-40;
+			}
+			.bookConner2 {
+				@apply absolute top-0 right-0 w-16 opacity-40 rotate-90;
+			}
+			.bookConner3 {
+				@apply absolute bottom-0 left-0 w-16 opacity-40 rotate-[270deg];
+			}
+			.bookConner4 {
+				@apply absolute bottom-0 right-0 w-16 opacity-40 rotate-180;
+			}
 
-      .leftBaton {
-        @apply h-[90%] bg-white/20 absolute w-[2px] left-1 top-0;
-        top: 50%; /* position the top  edge of the element at the middle of the parent */
-        transform: translate(0%, -50%);
-      }
-      .rightBaton {
-        @apply h-[90%] bg-white/20 absolute w-[2px] right-1 top-0;
-        top: 50%; /* position the top  edge of the element at the middle of the parent */
-        transform: translate(0%, -50%);
-      }
-    }
-  }
+			.leftBaton {
+				@apply h-[90%] bg-white/20 absolute w-[2px] left-1 top-0;
+				top: 50%; /* position the top  edge of the element at the middle of the parent */
+				transform: translate(0%, -50%);
+			}
+			.rightBaton {
+				@apply h-[90%] bg-white/20 absolute w-[2px] right-1 top-0;
+				top: 50%; /* position the top  edge of the element at the middle of the parent */
+				transform: translate(0%, -50%);
+			}
+		}
+	}
 
-  .bookTitle {
-    @apply text-3xl uppercase max-h-0 -translate-y-24 opacity-100 delay-500 blur-none;
-    font-family: "guyot-headline", serif;
-    letter-spacing: 0.3rem;
-  }
+	.bookTitle {
+		@apply text-3xl uppercase max-h-0 -translate-y-24 opacity-100 delay-500 blur-none text-center;
+		font-family: "guyot-headline", serif;
+		letter-spacing: 0.3rem;
+	}
 }
 
 .bookTitle {
-  @apply text-3xl uppercase max-h-0 -translate-y-16 opacity-0 transition-all duration-1000 ease-in-out blur-xl;
-  font-family: "guyot-headline", serif;
-  letter-spacing: 0.3rem;
+	@apply text-3xl uppercase max-h-0 -translate-y-16 opacity-0 transition-all duration-1000 ease-in-out blur-xl text-center;
+	font-family: "guyot-headline", serif;
+	letter-spacing: 0.3rem;
 }
 
 .bookMask {
-  @apply absolute top-0 left-0 px-4 py-10 flex flex-col items-center w-full h-full;
+	@apply absolute top-0 left-0 px-4 py-10 flex flex-col items-center w-full h-full;
 }
 
 .bookMark {
-  @apply opacity-70 w-7;
+	@apply opacity-70 w-7;
 }
 
 .borderHorizonTop {
-  @apply bg-white/10 inline-block h-full max-w-[1px] w-[1px] my-4 relative opacity-100 transition-opacity duration-700;
+	@apply bg-white/10 inline-block h-full max-w-[1px] w-[1px] my-4 relative opacity-100 transition-opacity duration-700;
 }
 .borderHorizonTop::before {
-  @apply w-1 h-1 rounded-full bg-white/10 inline-block absolute top-0 z-10 left-[-1.5px];
-  content: "";
+	@apply w-1 h-1 rounded-full bg-white/10 inline-block absolute top-0 z-10 left-[-1.5px];
+	content: "";
 }
 
 .borderHorizonTop::after {
-  @apply w-1 h-1 rounded-full bg-white/10 inline-block absolute bottom-0 z-10 left-[-1.5px];
-  content: "";
+	@apply w-1 h-1 rounded-full bg-white/10 inline-block absolute bottom-0 z-10 left-[-1.5px];
+	content: "";
 }
 
 .bookNumber {
-  @apply flex items-center flex-col;
-  > h1 {
-    @apply text-[3rem];
-    font-family: "guyot-headline", serif;
-    letter-spacing: 0.05rem;
-    line-height: 1;
-  }
-  > p {
-    @apply text-xs;
-  }
+	@apply flex items-center flex-col;
+	> h1 {
+		@apply text-[3rem];
+		font-family: "guyot-headline", serif;
+		letter-spacing: 0.05rem;
+		line-height: 1;
+	}
+	> p {
+		@apply text-xs;
+	}
 }
