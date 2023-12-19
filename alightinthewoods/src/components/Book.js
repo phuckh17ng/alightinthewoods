@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Book.module.scss";
+import styles from "./Book.module.css";
 const Book = ({ imgUrl, title, index, bookMark }) => {
   return (
     <div className={styles.bookContainer}>

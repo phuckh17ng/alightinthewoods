@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Sidebar.module.scss";
+import styles from "./Sidebar.module.css";
 const Sidebar = () => {
   const [sidebarShow, setSidebarShow] = useState(false);
   const handleSidebarOnClick = () => {

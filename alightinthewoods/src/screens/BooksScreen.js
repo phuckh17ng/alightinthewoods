@@ -1,6 +1,6 @@
 import React from "react";
 import Book from "../components/Book";
-import styles from "./BooksScreen.module.scss";
+import styles from "./BooksScreen.module.css";
 
 const data = [
   {
