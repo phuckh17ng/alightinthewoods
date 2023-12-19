@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alightinthewoods/static/css/main.34bc144c.css",
+    "main.css": "/alightinthewoods/static/css/main.6133b0db.css",
     "main.js": "/alightinthewoods/static/js/main.65c3a76c.js",
     "static/js/787.7b96f971.chunk.js": "/alightinthewoods/static/js/787.7b96f971.chunk.js",
     "static/media/ch2_cover.png": "/alightinthewoods/static/media/ch2_cover.900f2277409ea48756a3.png",
@@ -10,12 +10,12 @@
     "static/media/ch5_cover.png": "/alightinthewoods/static/media/ch5_cover.7113def38cabc7f77501.png",
     "static/media/ETW-Hiding.png": "/alightinthewoods/static/media/ETW-Hiding.f77295c7cb183a386538.png",
     "index.html": "/alightinthewoods/index.html",
-    "main.34bc144c.css.map": "/alightinthewoods/static/css/main.34bc144c.css.map",
+    "main.6133b0db.css.map": "/alightinthewoods/static/css/main.6133b0db.css.map",
     "main.65c3a76c.js.map": "/alightinthewoods/static/js/main.65c3a76c.js.map",
     "787.7b96f971.chunk.js.map": "/alightinthewoods/static/js/787.7b96f971.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34bc144c.css",
+    "static/css/main.6133b0db.css",
     "static/js/main.65c3a76c.js"
   ]
 }
