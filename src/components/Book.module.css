@@ -1,0 +1,289 @@
+.bookContainer {
+  transition: flex cubic-bezier(0.525, 0.06, 0.11, 0.995) 1200ms,
+    -webkit-box-flex cubic-bezier(0.525, 0.06, 0.11, 0.995) 1200ms,
+    -ms-flex cubic-bezier(0.525, 0.06, 0.11, 0.995) 1200ms;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 0%;
+  /* //   @apply w-full h-full relative overflow-hidden flex flex-1; */
+}
+
+.bookHoverMask {
+  /* // @apply absolute top-0 left-0 px-4 py-8 flex flex-col items-center w-full h-full transition-opacity delay-500 ease-in-out duration-1000 opacity-100; */
+  position: absolute;
+  transition: opacity linear 0.2s;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* opacity: 1; */
+  /* transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s; */
+  > div {
+    /* //   @apply relative w-full h-full; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .bookConner1 {
+      /* // @apply absolute top-0 left-0 w-16 opacity-40; */
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 4rem;
+      opacity: 0.4;
+    }
+    .bookConner2 {
+      /* // @apply absolute top-0 right-0 w-16 opacity-40 rotate-90; */
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 4rem;
+      opacity: 0.4;
+      transform: rotate(90deg);
+    }
+    .bookConner3 {
+      /* // @apply absolute bottom-0 left-0 w-16 opacity-40 rotate-[270deg]; */
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 4rem;
+      opacity: 0.4;
+      transform: rotate(270deg);
+    }
+    .bookConner4 {
+      /* // @apply absolute bottom-0 right-0 w-16 opacity-40 rotate-180; */
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 4rem;
+      opacity: 0.4;
+      transform: rotate(180deg);
+    }
+
+    .leftBaton {
+      /* // @apply h-[90%] bg-white/20 absolute w-[2px] left-1; */
+      position: absolute;
+      height: 90%;
+      width: 2px;
+      background: #fff;
+      opacity: 0.2;
+      left: 0.25rem;
+      top: 50%; /* position the top  edge of the element at the middle of the parent */
+      transform: translate(0%, -50%);
+    }
+    .rightBaton {
+      /* // @apply h-[90%] bg-white/20 absolute w-[2px] right-1; */
+      position: absolute;
+      height: 90%;
+      width: 2px;
+      background: #fff;
+      opacity: 0.2;
+      right: 0.25rem;
+      top: 50%; /* position the top  edge of the element at the middle of the parent */
+      transform: translate(0%, -50%);
+    }
+  }
+}
+
+.bookOpen {
+  flex: 100% !important;
+}
+
+.bookContainer:hover {
+  /* //   @apply flex-[20rem]; */
+  flex: 20rem;
+
+  .borderHorizonTop {
+    /* // @apply opacity-0; */
+    opacity: 0;
+  }
+  .bookHoverMask {
+    /* // @apply absolute top-0 left-0 px-4 py-8 flex flex-col items-center w-full h-full transition-opacity delay-500 ease-in-out duration-1000 opacity-100; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+    > div {
+      /* //   @apply relative w-full h-full; */
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      .bookConner1 {
+        /* // @apply absolute top-0 left-0 w-16 opacity-40; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 4rem;
+        opacity: 0.4;
+      }
+      .bookConner2 {
+        /* // @apply absolute top-0 right-0 w-16 opacity-40 rotate-90; */
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 4rem;
+        opacity: 0.4;
+        transform: rotate(90deg);
+      }
+      .bookConner3 {
+        /* // @apply absolute bottom-0 left-0 w-16 opacity-40 rotate-[270deg]; */
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 4rem;
+        opacity: 0.4;
+        transform: rotate(270deg);
+      }
+      .bookConner4 {
+        /* // @apply absolute bottom-0 right-0 w-16 opacity-40 rotate-180; */
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 4rem;
+        opacity: 0.4;
+        transform: rotate(180deg);
+      }
+
+      .leftBaton {
+        /* // @apply h-[90%] bg-white/20 absolute w-[2px] left-1; */
+        position: absolute;
+        height: 90%;
+        width: 2px;
+        background: #fff;
+        opacity: 0.2;
+        left: 0.25rem;
+        top: 50%; /* position the top  edge of the element at the middle of the parent */
+        transform: translate(0%, -50%);
+      }
+      .rightBaton {
+        /* // @apply h-[90%] bg-white/20 absolute w-[2px] right-1; */
+        position: absolute;
+        height: 90%;
+        width: 2px;
+        background: #fff;
+        opacity: 0.2;
+        right: 0.25rem;
+        top: 50%; /* position the top  edge of the element at the middle of the parent */
+        transform: translate(0%, -50%);
+      }
+    }
+  }
+
+  .bookTitle {
+    /* // @apply text-3xl uppercase max-h-0 -translate-y-24 opacity-100 delay-500 blur-none text-center; */
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-transform: uppercase;
+    max-height: 0px;
+    transform: translateY(-6rem);
+    opacity: 1;
+    filter: blur(0);
+    text-align: center;
+    font-family: "guyot-headline", serif;
+    letter-spacing: 0.3rem;
+    transition-delay: 0.5s;
+  }
+}
+
+.bookTitle {
+  /* //   @apply text-3xl uppercase max-h-0 -translate-y-16 opacity-0 transition-all duration-1000 ease-in-out blur-xl text-center; */
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  max-height: 0px;
+  transform: translateY(-4rem);
+  opacity: 0;
+  filter: blur(24px);
+  text-align: center;
+  font-family: "guyot-headline", serif;
+  letter-spacing: 0.3rem;
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bookMask {
+  /* //   @apply absolute top-0 left-0 px-4 py-10 flex flex-col items-center w-full h-full; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 2.5rem 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookMark {
+  /* //   @apply opacity-70 w-7; */
+  opacity: 0.7;
+  width: 1.75rem;
+}
+
+.borderHorizonTop {
+  /* //   @apply bg-white/10 inline-block h-full max-w-[1px] w-[1px] my-4 relative opacity-100 transition-opacity duration-700; */
+  position: relative;
+  background-color: rgb(255 255 255 / 0.1);
+  opacity: 1;
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  max-width: 1px;
+  margin: 1rem 0;
+  transition: opacity 0.7s;
+}
+.borderHorizonTop::before {
+  /* //   @apply w-1 h-1 rounded-full bg-white/10 inline-block absolute top-0 z-10 left-[-1.5px]; */
+  content: "";
+  background-color: rgb(255 255 255 / 0.1);
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+  border-radius: 9999px;
+  width: 0.25rem;
+  height: 0.25rem;
+  left: -1.5px;
+}
+
+.borderHorizonTop::after {
+  /* // @apply w-1 h-1 rounded-full bg-white/10 inline-block absolute bottom-0 z-10 left-[-1.5px]; */
+  content: "";
+  background-color: rgb(255 255 255 / 0.1);
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  border-radius: 9999px;
+  width: 0.25rem;
+  height: 0.25rem;
+  left: -1.5px;
+}
+
+.bookNumber {
+  @apply flex items-center flex-col;
+  > h1 {
+    @apply text-[3rem];
+    font-family: "guyot-headline", serif;
+    letter-spacing: 0.05rem;
+    line-height: 1;
+  }
+  > p {
+    @apply text-xs;
+  }
+}
